@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+    <!-- tailwind elements package -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+    rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css" />
+  <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        fontFamily: {
+          sans: ["Roboto", "sans-serif"],
+          body: ["Roboto", "sans-serif"],
+          mono: ["ui-monospace", "monospace"],
+        },
+      },
+      corePlugins: {
+        preflight: false,
+      },
+    };
+  </script>
+        <style>
+            /* Custom Scrollbar Styles */
+            ::-webkit-scrollbar {
+                width: 4px; /* Width of the vertical scrollbar */
+            }
+    
+            ::-webkit-scrollbar-track {
+                background: #f1f1f1; /* Color of the track */
+            }
+    
+            ::-webkit-scrollbar-thumb {
+                background: #e2e2e2; /* Color of the thumb */
+                border-radius: 3px; /* Rounding the corners of the thumb */
+            }
+        </style>
+</head>
+
+<body class="bg-gray-50">
+<div  class="flex items-start justify-start ">
+    <!-- Dashboard satrt -->
+    <div class="w-2/12 px-1 bg-white shadow-md h-screen overflow-y-scroll sticky top-0 z-50">
+        <div class="flex items-center justify-start mt-2 mb-8 px-5 ">
+            <img class="w-10 rounded-xl" src="logo.PNG" alt="">
+            <h1 class="pl-2 text-xl font-sans text-black">Kajyian</h1>
+        </div>
+        <h2 class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-base font-sans   text-gray-500"><i class="mr-2 fa-regular fa-envelope-open"></i> <a href="#">Dashboards</a></h2> 
+        <h3 class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-base font-sans  text-gray-500 "><i class="mr-2 fa-brands fa-windows"></i> <a href="#">Operation</a></h3> 
+        <ul>
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-tv"></i> <a href="#">Sessions</a> <i class="fa-solid fa-angle-right"></i></li> 
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-regular fa-calendar"></i> <a href="#">Schedule</a></li> 
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-tablet-screen-button"></i> <a href="#">Trials</a></li> 
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-chalkboard"></i> <a href="#">Courses</a></li> 
+        </ul>
+        <h3 class="ml-2 mr-2 mb-4 px-3 text-base font-medium text-gray-500">Performance</h3>
+        <ul>
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-handshake"></i> <a href="#">Compensation</a></li> 
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-chart-line"></i> <a href="#">Performance</a></li> 
+        </ul>
+        <h3 class="ml-2 mr-2 mb-4 px-3 text-base font-sans font-medium text-gray-500 ">Sales</h3>
+        <ul>
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-headset"></i> <a href="https://turkyyassin.github.io/page-1/">Leads</a></li> 
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-ban"></i> <a href="#">Suspended</a></li> 
+        </ul>
+        <h3 class="ml-2 mr-2 mb-4 px-3  text-base font-sans font-medium text-gray-500 ">Students</h3>
+        <ul>
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-list-ul"></i> <a href="https://turkyyassin.github.io/Student-List/">Student List</a></li> 
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-plus"></i> <a href="#">Add New</a></li> 
+        </ul>
+        <h3 class="ml-2 mr-2 mb-4 px-3  text-base font-sans font-medium text-gray-500 ">Tutors</h3>
+        <ul>
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-list-ul"></i> <a href="https://turkyyassin.github.io/Tutors-List/">Tuors List</a></li> 
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-regular fa-calendar"></i> <a href="#">Tuors Schedule</a></li> 
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-plus"></i> <a href="#">Add Tuors</a></li> 
+        </ul>
+        <h3 class="ml-2 mr-2 mb-4 px-3  text-base font-sans font-medium text-gray-500">Support</h3>
+        <ul>
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-list-ul"></i> <a href="#">Agent List</a></li> 
+        </ul>
+        <h3 class="ml-2 mr-2 mb-4 px-3  text-base font-sans font-medium text-gray-500 ">Financial</h3>
+        <ul>
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-regular fa-credit-card"></i> <a href="#">Tutors Payments</a></li> 
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-credit-card"></i> <a href="#">Students Payments</a> </li >
+        </ul>
+        <h3 class="ml-2 mr-2 mb-4 px-3  text-base font-sans font-medium text-gray-500 ">Administarmrtion</h3>
+        <ul>
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-brands fa-critical-role"></i> <a href="#">Roles</a></li> 
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-circle-exclamation"></i> <a href="#">Definitions</a></li> 
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-regular fa-comment"></i> <a href="#">Chat</a></li> 
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-list-check"></i> <a href="#">Tasks</a></li> 
+        </ul>
+    </div>
+    <!-- dashboard END -->
+
+    <!-- Righ Sec Start -->
+    <div class="w-10/12">
+        <!-- Search Start -->
+        <div class="flex justify-between items-center p-4 bg-white sticky top-0 z-50 border-b-2">
+            <div class="flex items-center">
+                <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M16.8 11.1a5.7 5.7 0 10-11.4 0 5.7 5.7 0 0011.4 0z"></path></svg>
+                <input class="ml-2 p-2 w-24 border-none focus:outline-none" type="text" placeholder="Search">
+                <kbd class="ml-2 p-1 border rounded">⌘K</kbd>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="text-gray-500 text-2xl"><i class="fa-solid fa-language"></i></button>
+                <button class="text-gray-500  text-2xl">☀</button>
+                <button class="text-gray-500"><i class="fa-solid fa-table-cells-large"></i></button>
+                <button class="relative text-gray-500">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="absolute top-0 right-0 inline-flex items-center justify-center px-1 py-1 text-xs font-bold leading-none rounded-full">•</span>
+                </button>
+                <a href="#"><img class="w-10 h-10 rounded-full" src="child.jpg" alt="Profile Picture"></a>
+            </div>
+        </div>
+        <!-- search END -->
+
+        <div class="my-3 mx-8 bg-white rounded shadow-lg border-4 border-gray-100 border-solid">
+
+        <div class="mb-1 pl-4 bg-gray-100">
+            <a href="#">Student List</a> |
+            <a href="#" class="text-blue-500">Student</a>
+        </div>
+
+        <div class=" bg-white rounded border-b-2 ">
+            <div class="flex items-center justify-between mb-1 pl-4">
+                    <div>
+                        <div class="mb-1 pl-8">
+                            <select class="border border-gray-300 rounded px-2 py-1">
+                                <option>25</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                            <select class="border border-gray-300 rounded px-2 py-1 ml-8">
+                                <option>Select Status</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                            <select class="border border-gray-300 rounded px-2 py-1 ml-8">
+                                <option>Select Gender</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                            <select class="border border-gray-300 rounded px-2 py-1 ml-8">
+                                <option>Select Tutor</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>
+                        <div class="pl-8">
+                            <select class="border border-gray-300 rounded px-3 py-1 ml-24">
+                                <option>Select Level</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                            <select class="border border-gray-300 rounded px-2 py-1 ml-8">
+                                <option>Select Subject</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class=" mr-24">
+                        <input type="text" placeholder="Search..." class="border border-gray-300 rounded px-2 py-1">
+                    <button class="bg-blue-500 text-white px-4 py-1 rounded">Add Tutor</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="overflow-x-auto bg-white rounded-lg">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="rounded pl-6 py-1 border-b-2 border-gray-200 text-left text-gray-600 uppercase tracking-wider"><input type="checkbox"></th>
+                            <th class="pl-9 py-1 border-b-2 border-gray-200 text-left text-gray-600 uppercase  text-sm font-sans font-normal text-gray-500">User</th>
+                            <th class="pl-6 py-1 border-b-2 border-gray-200 text-left text-gray-600 uppercase  text-sm font-sans font-normal text-gray-500">Schedule</th>
+                            <th class="pl-9 py-1 border-b-2 border-gray-200 text-left text-gray-600 uppercase  text-sm font-sans font-normal text-gray-500">Phone</th>
+                            <th class="pl-6 py-1 border-b-2 border-gray-200 text-left text-gray-600 uppercase  text-sm font-sans font-normal text-gray-500">Students</th>
+                            <th class="pl-6 py-1 border-b-2 border-gray-200 text-left text-gray-600 uppercase  text-sm font-sans font-normal text-gray-500">Gender</th>
+                            <th class="pl-6 py-1 border-b-2 border-gray-200 text-left text-gray-600 uppercase  text-sm font-sans font-normal text-gray-500">Subject</th>
+                            <th class="pl-6 py-1 border-b-2 border-gray-200 text-left text-gray-600 uppercase  text-sm font-sans font-normal text-gray-500">Age</th>
+                            <th class="pl-6 py-1 border-b-2 border-gray-200 text-left text-gray-600 uppercase  text-sm font-sans font-normal text-gray-500">Level</th>
+                            <th class="pl-6 py-1 border-b-2 border-gray-200 text-left text-gray-600 uppercase  text-sm font-sans font-normal text-gray-500">Availability</th>
+                            <th class="pl-6 py-1 border-b-2 border-gray-200 text-left text-gray-600 uppercase  text-sm font-sans font-normal text-gray-500">Cooperation</th>
+                            <th class="pl-6 py-1 border-b-2 border-gray-200 text-left text-gray-600 uppercase  text-sm font-sans font-normal text-gray-500">Status</th>
+                            <th class="pl-5 pr-5 py-1 border-b-2 border-gray-200 text-left text-gray-600 uppercase  text-sm font-sans font-normal text-gray-500">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b-2">
+                            <td class="h-4 w-4 rounded pl-6 py-1 border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider"> <input type="checkbox"> </td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 w-10 h-10"><img class="w-full h-full rounded-full" src="child.jpg" alt="Avatar"></div>
+                                    <div class="ml-3">
+                                        <p class="text-gray-900 whitespace-no-wrap text-base font-sans  text-sm text-gray-500">Nagaa Adbi</p>
+                                        <p class="text-gray-600 whitespace-no-wrap text-base font-sans text-sm  text-gray-500">dvsns@gmail.com</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pl-10 py-1 border-b border-gray-200 bg-white text-lg text-gray-300 text-base font-sans   text-gray-500"><i class="fa-regular fa-calendar-days"></i></td>
+                            <td class="flex items-center pl-4 py-4 border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><i class="fa-solid fa-phone pr-2 text-blue-400"></i> <p>+234564676</p></td>
+                            <td class="pl-9 py-1 border-b border-gray-200 bg-white text-sm text-blue-600 text-base font-sans   text-gray-500"><p>Omar</p></td>
+                            <td class="flex items-center pl-6 py-4 border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><i class="fa-solid fa-person text-blue-400 pr-2"></i> <p class="text-gray-900 whitespace-no-wrap">Male</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Quran</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans text-gray-500"><p>5:10</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Beginner</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 text-sm text-base font-sans "><p class="whitespace-no-wrap px-4 rounded-md text-green-300 bg-green-100">Available</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">cooperative</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500">
+                                <span class="relative inline-block px-3 py-1 font-semibold text-green-300 leading-tight">
+                                    <span aria-hidden class="absolute inset-0 bg-green-100 opacity-50 rounded-md"></span>
+                                    <span class="relative">Active</span>
+                                </span>
+                            </td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm">
+                                <button class="text-blue-600 hover:text-red-600 mx-2">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                                <button class="text-gray-600 hover:text-gray-900 mx-2">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="border-b-2">
+                            <td class="h-4 w-4 rounded pl-6 py-1 border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider"> <input type="checkbox"> </td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 w-10 h-10"><img class="w-full h-full rounded-full" src="child.jpg" alt="Avatar"></div>
+                                    <div class="ml-3">
+                                        <p class="text-gray-900 whitespace-no-wrap text-base font-sans  text-sm text-gray-500">Sara Nmsu</p>
+                                        <p class="text-gray-600 whitespace-no-wrap text-base font-sans text-sm  text-gray-500">fdsr@gmail.com</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pl-10 py-1 border-b border-gray-200 bg-white text-lg text-gray-300 text-base font-sans   text-gray-500"><i class="fa-regular fa-calendar-days"></i></td>
+                            <td class="flex items-center pl-4 py-4 border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><i class="fa-solid fa-phone pr-2 text-blue-400"></i> <p>+976548965</p></td>
+                            <td class="pl-9 py-1 border-b border-gray-200 bg-white text-sm text-blue-600 text-base font-sans   text-gray-500"><p>Ali</p></td>
+                            <td class="flex items-center pl-6 py-4 border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><i class="fa-solid fa-person text-blue-400 pr-2"></i> <p class="text-gray-900 whitespace-no-wrap">Female</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Arabic</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans text-gray-500"><p>7:15</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Beginner</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap px-3 rounded-md text-red-300 bg-red-100">Unavailable</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Uncooperative</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500">
+                                <span class="relative inline-block px-3 py-1 font-semibold text-red-300 leading-tight">
+                                    <span aria-hidden class="absolute inset-0 bg-red-100 opacity-50 rounded-md"></span>
+                                    <span class="relative">Unactive</span>
+                                </span>
+                            </td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm">
+                                <button class="text-blue-600 hover:text-red-600 mx-2">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                                <button class="text-gray-600 hover:text-gray-900 mx-2">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="border-b-2">
+                            <td class="h-4 w-4 rounded pl-6 py-1 border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider"> <input type="checkbox"> </td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 w-10 h-10"><img class="w-full h-full rounded-full" src="child.jpg" alt="Avatar"></div>
+                                    <div class="ml-3">
+                                        <p class="text-gray-900 whitespace-no-wrap text-base font-sans  text-sm text-gray-500">Nagaa Adbi</p>
+                                        <p class="text-gray-600 whitespace-no-wrap text-base font-sans text-sm  text-gray-500">dvsns@gmail.com</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pl-10 py-1 border-b border-gray-200 bg-white text-lg text-gray-300 text-base font-sans   text-gray-500"><i class="fa-regular fa-calendar-days"></i></td>
+                            <td class="flex items-center pl-4 py-4 border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><i class="fa-solid fa-phone pr-2 text-blue-400"></i> <p>+234564676</p></td>
+                            <td class="pl-9 py-1 border-b border-gray-200 bg-white text-sm text-blue-600 text-base font-sans   text-gray-500"><p>Omar</p></td>
+                            <td class="flex items-center pl-6 py-4 border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><i class="fa-solid fa-person text-blue-400 pr-2"></i> <p class="text-gray-900 whitespace-no-wrap">Male</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Quran</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans text-gray-500"><p>5:10</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Beginner</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 text-sm text-base font-sans "><p class="whitespace-no-wrap px-4 rounded-md text-green-300 bg-green-100">Available</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">cooperative</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500">
+                                <span class="relative inline-block px-3 py-1 font-semibold text-green-300 leading-tight">
+                                    <span aria-hidden class="absolute inset-0 bg-green-100 opacity-50 rounded-md"></span>
+                                    <span class="relative">Active</span>
+                                </span>
+                            </td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm">
+                                <button class="text-blue-600 hover:text-red-600 mx-2">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                                <button class="text-gray-600 hover:text-gray-900 mx-2">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="border-b-2">
+                            <td class="h-4 w-4 rounded pl-6 py-1 border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider"> <input type="checkbox"> </td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 w-10 h-10"><img class="w-full h-full rounded-full" src="child.jpg" alt="Avatar"></div>
+                                    <div class="ml-3">
+                                        <p class="text-gray-900 whitespace-no-wrap text-base font-sans  text-sm text-gray-500">Sara Nmsu</p>
+                                        <p class="text-gray-600 whitespace-no-wrap text-base font-sans text-sm  text-gray-500">fdsr@gmail.com</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pl-10 py-1 border-b border-gray-200 bg-white text-lg text-gray-300 text-base font-sans   text-gray-500"><i class="fa-regular fa-calendar-days"></i></td>
+                            <td class="flex items-center pl-4 py-4 border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><i class="fa-solid fa-phone pr-2 text-blue-400"></i> <p>+976548965</p></td>
+                            <td class="pl-9 py-1 border-b border-gray-200 bg-white text-sm text-blue-600 text-base font-sans   text-gray-500"><p>Ali</p></td>
+                            <td class="flex items-center pl-6 py-4 border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><i class="fa-solid fa-person text-blue-400 pr-2"></i> <p class="text-gray-900 whitespace-no-wrap">Female</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Arabic</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans text-gray-500"><p>7:15</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Beginner</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap px-3 rounded-md text-red-300 bg-red-100">Unavailable</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Uncooperative</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500">
+                                <span class="relative inline-block px-3 py-1 font-semibold text-red-300 leading-tight">
+                                    <span aria-hidden class="absolute inset-0 bg-red-100 opacity-50 rounded-md"></span>
+                                    <span class="relative">Unactive</span>
+                                </span>
+                            </td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm">
+                                <button class="text-blue-600 hover:text-red-600 mx-2">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                                <button class="text-gray-600 hover:text-gray-900 mx-2">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="border-b-2">
+                            <td class="h-4 w-4 rounded pl-6 py-1 border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider"> <input type="checkbox"> </td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 w-10 h-10"><img class="w-full h-full rounded-full" src="child.jpg" alt="Avatar"></div>
+                                    <div class="ml-3">
+                                        <p class="text-gray-900 whitespace-no-wrap text-base font-sans  text-sm text-gray-500">Nagaa Adbi</p>
+                                        <p class="text-gray-600 whitespace-no-wrap text-base font-sans text-sm  text-gray-500">dvsns@gmail.com</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pl-10 py-1 border-b border-gray-200 bg-white text-lg text-gray-300 text-base font-sans   text-gray-500"><i class="fa-regular fa-calendar-days"></i></td>
+                            <td class="flex items-center pl-4 py-4 border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><i class="fa-solid fa-phone pr-2 text-blue-400"></i> <p>+234564676</p></td>
+                            <td class="pl-9 py-1 border-b border-gray-200 bg-white text-sm text-blue-600 text-base font-sans   text-gray-500"><p>Omar</p></td>
+                            <td class="flex items-center pl-6 py-4 border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><i class="fa-solid fa-person text-blue-400 pr-2"></i> <p class="text-gray-900 whitespace-no-wrap">Male</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Quran</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans text-gray-500"><p>5:10</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Beginner</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 text-sm text-base font-sans "><p class="whitespace-no-wrap px-4 rounded-md text-green-300 bg-green-100">Available</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">cooperative</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500">
+                                <span class="relative inline-block px-3 py-1 font-semibold text-green-300 leading-tight">
+                                    <span aria-hidden class="absolute inset-0 bg-green-100 opacity-50 rounded-md"></span>
+                                    <span class="relative">Active</span>
+                                </span>
+                            </td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm">
+                                <button class="text-blue-600 hover:text-red-600 mx-2">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                                <button class="text-gray-600 hover:text-gray-900 mx-2">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="border-b-2">
+                            <td class="h-4 w-4 rounded pl-6 py-1 border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider"> <input type="checkbox"> </td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 w-10 h-10"><img class="w-full h-full rounded-full" src="child.jpg" alt="Avatar"></div>
+                                    <div class="ml-3">
+                                        <p class="text-gray-900 whitespace-no-wrap text-base font-sans  text-sm text-gray-500">Sara Nmsu</p>
+                                        <p class="text-gray-600 whitespace-no-wrap text-base font-sans text-sm  text-gray-500">fdsr@gmail.com</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pl-10 py-1 border-b border-gray-200 bg-white text-lg text-gray-300 text-base font-sans   text-gray-500"><i class="fa-regular fa-calendar-days"></i></td>
+                            <td class="flex items-center pl-4 py-4 border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><i class="fa-solid fa-phone pr-2 text-blue-400"></i> <p>+976548965</p></td>
+                            <td class="pl-9 py-1 border-b border-gray-200 bg-white text-sm text-blue-600 text-base font-sans   text-gray-500"><p>Ali</p></td>
+                            <td class="flex items-center pl-6 py-4 border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><i class="fa-solid fa-person text-blue-400 pr-2"></i> <p class="text-gray-900 whitespace-no-wrap">Female</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Arabic</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans text-gray-500"><p>7:15</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Beginner</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap px-3 rounded-md text-red-300 bg-red-100">Unavailable</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Uncooperative</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500">
+                                <span class="relative inline-block px-3 py-1 font-semibold text-red-300 leading-tight">
+                                    <span aria-hidden class="absolute inset-0 bg-red-100 opacity-50 rounded-md"></span>
+                                    <span class="relative">Unactive</span>
+                                </span>
+                            </td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm">
+                                <button class="text-blue-600 hover:text-red-600 mx-2">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                                <button class="text-gray-600 hover:text-gray-900 mx-2">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="border-b-2">
+                            <td class="h-4 w-4 rounded pl-6 py-1 border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider"> <input type="checkbox"> </td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 w-10 h-10"><img class="w-full h-full rounded-full" src="child.jpg" alt="Avatar"></div>
+                                    <div class="ml-3">
+                                        <p class="text-gray-900 whitespace-no-wrap text-base font-sans  text-sm text-gray-500">Nagaa Adbi</p>
+                                        <p class="text-gray-600 whitespace-no-wrap text-base font-sans text-sm  text-gray-500">dvsns@gmail.com</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pl-10 py-1 border-b border-gray-200 bg-white text-lg text-gray-300 text-base font-sans   text-gray-500"><i class="fa-regular fa-calendar-days"></i></td>
+                            <td class="flex items-center pl-4 py-4 border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><i class="fa-solid fa-phone pr-2 text-blue-400"></i> <p>+234564676</p></td>
+                            <td class="pl-9 py-1 border-b border-gray-200 bg-white text-sm text-blue-600 text-base font-sans   text-gray-500"><p>Omar</p></td>
+                            <td class="flex items-center pl-6 py-4 border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><i class="fa-solid fa-person text-blue-400 pr-2"></i> <p class="text-gray-900 whitespace-no-wrap">Male</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Quran</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans text-gray-500"><p>5:10</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Beginner</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 text-sm text-base font-sans "><p class="whitespace-no-wrap px-4 rounded-md text-green-300 bg-green-100">Available</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">cooperative</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500">
+                                <span class="relative inline-block px-3 py-1 font-semibold text-green-300 leading-tight">
+                                    <span aria-hidden class="absolute inset-0 bg-green-100 opacity-50 rounded-md"></span>
+                                    <span class="relative">Active</span>
+                                </span>
+                            </td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm">
+                                <button class="text-blue-600 hover:text-red-600 mx-2">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                                <button class="text-gray-600 hover:text-gray-900 mx-2">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="border-b-2">
+                            <td class="h-4 w-4 rounded pl-6 py-1 border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider"> <input type="checkbox"> </td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 w-10 h-10"><img class="w-full h-full rounded-full" src="child.jpg" alt="Avatar"></div>
+                                    <div class="ml-3">
+                                        <p class="text-gray-900 whitespace-no-wrap text-base font-sans  text-sm text-gray-500">Sara Nmsu</p>
+                                        <p class="text-gray-600 whitespace-no-wrap text-base font-sans text-sm  text-gray-500">fdsr@gmail.com</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pl-10 py-1 border-b border-gray-200 bg-white text-lg text-gray-300 text-base font-sans   text-gray-500"><i class="fa-regular fa-calendar-days"></i></td>
+                            <td class="flex items-center pl-4 py-4 border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><i class="fa-solid fa-phone pr-2 text-blue-400"></i> <p>+976548965</p></td>
+                            <td class="pl-9 py-1 border-b border-gray-200 bg-white text-sm text-blue-600 text-base font-sans   text-gray-500"><p>Ali</p></td>
+                            <td class="flex items-center pl-6 py-4 border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><i class="fa-solid fa-person text-blue-400 pr-2"></i> <p class="text-gray-900 whitespace-no-wrap">Female</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Arabic</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans text-gray-500"><p>7:15</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Beginner</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap px-3 rounded-md text-red-300 bg-red-100">Unavailable</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Uncooperative</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500">
+                                <span class="relative inline-block px-3 py-1 font-semibold text-red-300 leading-tight">
+                                    <span aria-hidden class="absolute inset-0 bg-red-100 opacity-50 rounded-md"></span>
+                                    <span class="relative">Unactive</span>
+                                </span>
+                            </td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm">
+                                <button class="text-blue-600 hover:text-red-600 mx-2">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                                <button class="text-gray-600 hover:text-gray-900 mx-2">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="border-b-2">
+                            <td class="h-4 w-4 rounded pl-6 py-1 border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider"> <input type="checkbox"> </td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 w-10 h-10"><img class="w-full h-full rounded-full" src="child.jpg" alt="Avatar"></div>
+                                    <div class="ml-3">
+                                        <p class="text-gray-900 whitespace-no-wrap text-base font-sans  text-sm text-gray-500">Nagaa Adbi</p>
+                                        <p class="text-gray-600 whitespace-no-wrap text-base font-sans text-sm  text-gray-500">dvsns@gmail.com</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pl-10 py-1 border-b border-gray-200 bg-white text-lg text-gray-300 text-base font-sans   text-gray-500"><i class="fa-regular fa-calendar-days"></i></td>
+                            <td class="flex items-center pl-4 py-4 border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><i class="fa-solid fa-phone pr-2 text-blue-400"></i> <p>+234564676</p></td>
+                            <td class="pl-9 py-1 border-b border-gray-200 bg-white text-sm text-blue-600 text-base font-sans   text-gray-500"><p>Omar</p></td>
+                            <td class="flex items-center pl-6 py-4 border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><i class="fa-solid fa-person text-blue-400 pr-2"></i> <p class="text-gray-900 whitespace-no-wrap">Male</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Quran</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans text-gray-500"><p>5:10</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Beginner</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 text-sm text-base font-sans "><p class="whitespace-no-wrap px-4 rounded-md text-green-300 bg-green-100">Available</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">cooperative</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500">
+                                <span class="relative inline-block px-3 py-1 font-semibold text-green-300 leading-tight">
+                                    <span aria-hidden class="absolute inset-0 bg-green-100 opacity-50 rounded-md"></span>
+                                    <span class="relative">Active</span>
+                                </span>
+                            </td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm">
+                                <button class="text-blue-600 hover:text-red-600 mx-2">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                                <button class="text-gray-600 hover:text-gray-900 mx-2">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="border-b-2">
+                            <td class="h-4 w-4 rounded pl-6 py-1 border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider"> <input type="checkbox"> </td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 w-10 h-10"><img class="w-full h-full rounded-full" src="child.jpg" alt="Avatar"></div>
+                                    <div class="ml-3">
+                                        <p class="text-gray-900 whitespace-no-wrap text-base font-sans  text-sm text-gray-500">Sara Nmsu</p>
+                                        <p class="text-gray-600 whitespace-no-wrap text-base font-sans text-sm  text-gray-500">fdsr@gmail.com</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pl-10 py-1 border-b border-gray-200 bg-white text-lg text-gray-300 text-base font-sans   text-gray-500"><i class="fa-regular fa-calendar-days"></i></td>
+                            <td class="flex items-center pl-4 py-4 border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><i class="fa-solid fa-phone pr-2 text-blue-400"></i> <p>+976548965</p></td>
+                            <td class="pl-9 py-1 border-b border-gray-200 bg-white text-sm text-blue-600 text-base font-sans   text-gray-500"><p>Ali</p></td>
+                            <td class="flex items-center pl-6 py-4 border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><i class="fa-solid fa-person text-blue-400 pr-2"></i> <p class="text-gray-900 whitespace-no-wrap">Female</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Arabic</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans text-gray-500"><p>7:15</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Beginner</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap px-3 rounded-md text-red-300 bg-red-100">Unavailable</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Uncooperative</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500">
+                                <span class="relative inline-block px-3 py-1 font-semibold text-red-300 leading-tight">
+                                    <span aria-hidden class="absolute inset-0 bg-red-100 opacity-50 rounded-md"></span>
+                                    <span class="relative">Unactive</span>
+                                </span>
+                            </td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm">
+                                <button class="text-blue-600 hover:text-red-600 mx-2">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                                <button class="text-gray-600 hover:text-gray-900 mx-2">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="border-b-2">
+                            <td class="h-4 w-4 rounded pl-6 py-1 border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider"> <input type="checkbox"> </td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 w-10 h-10"><img class="w-full h-full rounded-full" src="child.jpg" alt="Avatar"></div>
+                                    <div class="ml-3">
+                                        <p class="text-gray-900 whitespace-no-wrap text-base font-sans  text-sm text-gray-500">Nagaa Adbi</p>
+                                        <p class="text-gray-600 whitespace-no-wrap text-base font-sans text-sm  text-gray-500">dvsns@gmail.com</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pl-10 py-1 border-b border-gray-200 bg-white text-lg text-gray-300 text-base font-sans   text-gray-500"><i class="fa-regular fa-calendar-days"></i></td>
+                            <td class="flex items-center pl-4 py-4 border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><i class="fa-solid fa-phone pr-2 text-blue-400"></i> <p>+234564676</p></td>
+                            <td class="pl-9 py-1 border-b border-gray-200 bg-white text-sm text-blue-600 text-base font-sans   text-gray-500"><p>Omar</p></td>
+                            <td class="flex items-center pl-6 py-4 border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><i class="fa-solid fa-person text-blue-400 pr-2"></i> <p class="text-gray-900 whitespace-no-wrap">Male</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Quran</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans text-gray-500"><p>5:10</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Beginner</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 text-sm text-base font-sans "><p class="whitespace-no-wrap px-4 rounded-md text-green-300 bg-green-100">Available</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">cooperative</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500">
+                                <span class="relative inline-block px-3 py-1 font-semibold text-green-300 leading-tight">
+                                    <span aria-hidden class="absolute inset-0 bg-green-100 opacity-50 rounded-md"></span>
+                                    <span class="relative">Active</span>
+                                </span>
+                            </td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm">
+                                <button class="text-blue-600 hover:text-red-600 mx-2">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                                <button class="text-gray-600 hover:text-gray-900 mx-2">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="border-b-2">
+                            <td class="h-4 w-4 rounded pl-6 py-1 border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider"> <input type="checkbox"> </td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 w-10 h-10"><img class="w-full h-full rounded-full" src="child.jpg" alt="Avatar"></div>
+                                    <div class="ml-3">
+                                        <p class="text-gray-900 whitespace-no-wrap text-base font-sans  text-sm text-gray-500">Sara Nmsu</p>
+                                        <p class="text-gray-600 whitespace-no-wrap text-base font-sans text-sm  text-gray-500">fdsr@gmail.com</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pl-10 py-1 border-b border-gray-200 bg-white text-lg text-gray-300 text-base font-sans   text-gray-500"><i class="fa-regular fa-calendar-days"></i></td>
+                            <td class="flex items-center pl-4 py-4 border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><i class="fa-solid fa-phone pr-2 text-blue-400"></i> <p>+976548965</p></td>
+                            <td class="pl-9 py-1 border-b border-gray-200 bg-white text-sm text-blue-600 text-base font-sans   text-gray-500"><p>Ali</p></td>
+                            <td class="flex items-center pl-6 py-4 border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><i class="fa-solid fa-person text-blue-400 pr-2"></i> <p class="text-gray-900 whitespace-no-wrap">Female</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Arabic</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans text-gray-500"><p>7:15</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Beginner</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap px-3 rounded-md text-red-300 bg-red-100">Unavailable</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500"><p class="text-gray-900 whitespace-no-wrap">Uncooperative</p></td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm text-base font-sans   text-gray-500">
+                                <span class="relative inline-block px-3 py-1 font-semibold text-red-300 leading-tight">
+                                    <span aria-hidden class="absolute inset-0 bg-red-100 opacity-50 rounded-md"></span>
+                                    <span class="relative">Unactive</span>
+                                </span>
+                            </td>
+                            <td class="pl-6 py-1 border-b border-gray-200 bg-white text-sm">
+                                <button class="text-blue-600 hover:text-red-600 mx-2">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                                <button class="text-gray-600 hover:text-gray-900 mx-2">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                            </td>
+                        </tr>
+            </div>
+        </div>
+
+        <div class=" flex  justify-between items-center p-4 rounded-lg">
+            <p class="text-gray-600 mb-4">Showing 1 to 10 of 50 entries</p>
+            <div class="flex items-center space-x-2">
+                <button class="px-3 py-1 text-gray-500 bg-gray-200 rounded-lg hover:bg-gray-300">&laquo;</button>
+                <button class="px-3 py-1 text-gray-500 bg-gray-200 rounded-lg hover:bg-gray-300">&lsaquo;</button>
+                <button class="px-3 py-1 text-white bg-blue-500 rounded-lg">1</button>
+                <button class="px-3 py-1 text-gray-500 bg-gray-200 rounded-lg hover:bg-gray-300">2</button>
+                <button class="px-3 py-1 text-gray-500 bg-gray-200 rounded-lg hover:bg-gray-300">3</button>
+                <button class="px-3 py-1 text-gray-500 bg-gray-200 rounded-lg hover:bg-gray-300">4</button>
+                <button class="px-3 py-1 text-gray-500 bg-gray-200 rounded-lg hover:bg-gray-300">5</button>
+                <button class="px-3 py-1 text-gray-500 bg-gray-200 rounded-lg hover:bg-gray-300">&rsaquo;</button>
+                <button class="px-3 py-1 text-gray-500 bg-gray-200 rounded-lg hover:bg-gray-300">&raquo;</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    </body>
+
